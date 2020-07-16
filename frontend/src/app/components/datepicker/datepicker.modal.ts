@@ -362,6 +362,6 @@ export class DatePickerModal extends OpModalComponent implements AfterViewInit {
    * by checking the children links.
    */
   private get isParent():boolean {
-    return this.changeset.projectedResource.$links.children.length > 0;
+    return this.changeset.projectedResource.$links.children && this.changeset.projectedResource.$links.children.length > 0;
   }
 }
